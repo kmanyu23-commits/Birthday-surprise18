@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Chahanavi Ji 🎂</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:Poppins;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+.container{
+    text-align:center;
+    color:white;
+}
+h1{
+    font-size:60px;
+    margin:0;
+    animation:fadeIn 3s ease-in-out;
+}
+h2{
+    margin:10px 0;
+}
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4e50;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:20px;
+}
+.letter{
+    display:none;
+    background:white;
+    color:#333;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(-20px);}
+    to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Birthday 🎉</h1>
+    <h2>Dear Chahanavi Ji 💖</h2>
+    <h3>18 February</h3>
+
+    <button onclick="showLetter()">Click Here</button>
+
+    <div class="letter" id="letterBox">
+        <h3>To: Abhimanyu Choudhary 💌</h3>
+        <p>
+            Dear Chahanavi Ji 💖<br><br>
+            May this 18th February bring lots of happiness, success,
+            and beautiful moments in your life.  
+            Keep smiling always and stay blessed.  
+            You are truly special! 🎂🎉💕
+        </p>
+    </div>
+</div>
+
+<script>
+function showLetter(){
+    document.getElementById("letterBox").style.display="block";
+}
+</script>
+
+</body>
+</html>
